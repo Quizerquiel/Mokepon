@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Unbounded:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: #2D033B;
+}
+
+.titulo {
+    color: white;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.subtitulo {
+    font-size: 30px;
+    margin: 10px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+
+.tarjeta-mokepon {
+    width: 221px;
+    height: 150px;
+    background: #810CA8;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    transition: background-color .5s;
+}
+
+.text-tarjeta-pokemon{
+    font-size: 25px;
+}
+
+
+.tarjeta-mokepon img {
+    width: 140px;
+}
+
+.input-tarjeta-mokepon {
+    display: none;
+}
+
+.input-tarjeta-mokepon:checked + .tarjeta-mokepon{
+    border: 1px #E5B8F4 solid;
+    background: rgb(95, 15, 95);
+}
+
+.tarjeta-mokepon:hover {
+    background: rgb(95, 15, 95);
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+#boton-mascota {
+    background: transparent;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    border: 3px solid white;
+    color: white;
+    margin-top: 20px;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque-mascota {
+    box-sizing: border-box;
+    width: 80px;
+    height: 47px;
+    border-radius: 20px;
+    background-color: #810CA8;
+    border: 0;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+#mensajes {
+    margin: 15px;
+    display: flex;
+    width: 266px;
+    height: 108px;
+    background: #C147E9;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#boton-reiniciar {
+    background: transparent;
+    color: white;
+    border: 1px white solid;
+    width: 125px;
+    height: 33px;
+    border-radius: 20px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    background: #6940b9;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 40px;
+    margin: 10px;
+    font-family: Rubik Storm;
+}
+
+#mascota-jugador, #mascota-enemigo {
+    margin: 6px;
+    font-size: 25px;
+}
+
+.estadistica-jugador, .estadistica-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa {
+    display: flex   ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    background: transparent;
+    color: white;
+    border: 1px white solid;
+    width: 125px;
+    height: 33px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+@media (max-width: 414px) {
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}   
+
+@media (max-width: 541px) {
+    .tarjetas-ataques{
+        flex-direction: column;
+    }
+
+    .boton-ataque-mascota {
+        box-sizing: border-box;
+        width: 80px;
+        height: 47px;
+        border-radius: 20px;
+        background-color: #810CA8;
+        border: 0;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+    }
+}   
+
+@media (max-width: 808px) {
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .tarjeta-mokepon {
+        width: 250px;
+        height: 150px;
+        background: #810CA8;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        transition: background-color .5s;
+    }
+
+}   
+
+@media (max-width: 465px) {
+    #ver-mapa div{
+        display: flex   ;
+        flex-direction: column;
+        align-items: center;
+    }
+}   
